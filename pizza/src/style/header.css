@@ -1,0 +1,350 @@
+.HomeHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* width: 100%; */
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-bottom: 31px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1380px;
+    height: 35px;
+
+}
+
+hr {
+    border: 1px solid #F0F0F0;
+    width: 100%;
+    height: 1px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    width: 1380px;
+}
+
+.place {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.locatio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.navP {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #191919;
+}
+
+.delivery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.delivery span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #191919;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.accaunt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.logoName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.shopCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+    background: #FF7010;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+
+}
+
+.shopCard:active {
+    scale: 80%;
+    transition: all 0.4s ease;
+}
+
+.shopCard p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.shopCard span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.item {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #191919;
+    transition: all 0.4s ease;
+    display: inline-block;
+    position: relative;
+
+}
+
+.item:hover {
+    transition: all 0.4s ease;
+}
+
+.item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #FF7010;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+
+}
+
+.item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+.karzinka {
+    width: 420px;
+    height: 100%;
+    display: flex;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.overfolw {
+    overflow: hidden;
+}
+
+.karzinkaHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.karzinkaHeader h1 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: #191919;
+}
+
+.karzinkaHeader img {
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.karzinkaHeader img:active {
+    scale: 80%;
+    transition: all 0.4s ease;
+}
+
+.karzinka {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+::-webkit-scrollbar{
+    width: 0px;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: #FF7010;
+    border-radius: 10%;
+}
+.products {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    height: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.product img {
+    height: 94px;
+    width: 94px;
+
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 12px;
+    height: 126px;
+    width: 380px;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.productInfos {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.karzinkaInfo {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.ProductPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.productCounter {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    padding: 8px;
+    gap: 10px;
+    width: 92px;
+    height: 36px;
+    background: #FFEEE2;
+    border-radius: 6px;
+    user-select: none;
+}
+
+.productCounter p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FF7010;
+}
+
+.productCounter span {
+    width: 8px;
+    height: 1.5px;
+    cursor: pointer;
+    color: #FF7010;
+    transition: all 0.4s ease;
+    user-select: none;
+}
+
+.productCounter span:active {
+    scale: 80%;
+    transition: all 0.4s ease;
+}
+
+.karzinkaInfo p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #191919;
+
+width: 230px;
+
+
+}
+
+.karzinkaInfo span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #191919;
+}
+.navSelect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.pagesNav{
+    display: none;
+    height: 64px;
+}
+.liste{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}

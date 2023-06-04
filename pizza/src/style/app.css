@@ -1,10 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style-type: none;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body {
     width: 100%;
     height: 100vh;
@@ -15,4 +17,121 @@ body {
     width: 1380px;
     height: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Locatiion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 8px;
+    height: 80px;
+    width: 100%;
+}
+
+.Locatiion p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #191919;
+}
+
+.locationInput {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 6px;
+    height: 48px;
+    width: 783px;
+    padding: 2px;
+    gap: 10px;
+}
+
+.locationInput input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+
+.locationInput input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #A5A5A5;
+}
+
+.Locatiion button {
+    width: 150px;
+    height: 48px;
+    background: #FF7010;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Categori box */
+
+.CategoriBox {
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 12px;
+    height: 104px;
+    width: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    transition: all 0.4s ease;  
+    cursor: pointer;
+}
+.CategoriBox:hover {
+    transform: translateY(-5px);
+    transition: all 0.4s ease;  
+}
+.CategoriBox p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #191919;
+    transition: all 0.4s ease;  
+}
+.CategoriBox:hover  p{
+    transition: all 0.4s ease;
+    color: #E23535;
+}
+
+.categoriBoxes{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 42.10px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Skidka Pizza img */
+
+.SkidkaPizza{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 60px;
 }
