@@ -5,11 +5,11 @@ import Footer from '../companents/Footer'
 import Location from '../companents/Location'
 import CategoriBox from '../companents/CategoriBox'
 import SkidkaPizza from '../companents/SkidkaPizza'
+import Pizza from './Pizza'
 
 export default function Home() {
   return (
     <div>
-      <HomeHeader />
       <div className="container">
           <div className="categoriBoxes">
             <CategoriBox/>
@@ -28,8 +28,8 @@ export default function Home() {
             <SkidkaPizza/>
           </div>
           <Location/>
+          <Pizza/>
       </div>
-      <Footer />
     </div>
   )
 }

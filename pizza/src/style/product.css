@@ -1,0 +1,115 @@
+.Product {
+    width: 300px;
+    height: 480px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.Product img {
+    height: 300px;
+    width: 300px;
+}
+
+.poductInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+}
+
+.poductInfo p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #191919;
+}
+
+.poductInfo span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #191919;
+}
+
+.buutonPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.buutonPrice button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 32px;
+    gap: 10px;
+    background: #FF7010;
+    border-radius: 6px;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.buutonPrice button:active {
+    scale: 70%;
+    transition: all 0.4s ease;
+}
+
+.buutonPrice b {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FF7010;
+}
+
+.AllProducts {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 60px;
+}
+
+.ProductsName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.ProductsName p {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #191919;
+}
+
+.ProductsName button {
+    padding: 9px 16px;
+    gap: 8px;
+    width: 126px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #191919;
+}
