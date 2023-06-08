@@ -1,7 +1,7 @@
 import React from 'react'
 import ProductPizza from '../images/ProductPizza.png'
 
-export default function Product() {
+export default function Product({setName}) {
   return (
     <div className='Product'>
         <img src={ProductPizza} alt="" />
@@ -9,7 +9,7 @@ export default function Product() {
             <p>Пепперони по-деревенски</p>
             <span>Огурцы маринованные, Пепперони, Сыр Моцарелла...</span>
             <div className="buutonPrice">
-                <button>Выбрать</button>
+                <button onClick={ setName('boxInfo')} >Выбрать</button>
                 <b>от 399 ₽</b>
             </div>
         </div>

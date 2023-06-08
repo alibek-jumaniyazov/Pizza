@@ -2,25 +2,25 @@ import React from 'react'
 import Product from '../companents/Product'
 import ProductsName from '../companents/ProductsName'
 
-export default function Pizza({ setNav, setNavHome }) {
-  
-  return (
-    <>
-    <ProductsName/>
-    <div className='AllProducts'>
-      <Product/>
-      <Product/>
-      <Product/>
-      <Product/>
-      <Product/>
-      <Product/>
-      <Product/>
-      <Product/>
-      <Product/>
-      <Product/>
-      <Product/>
-      <Product/>
-    </div>
-    </>
-  )
+export default function Pizza({setName}) {
+
+    return (
+        <>
+            <ProductsName />
+            <div className='AllProducts'>
+                <Product setName={setName}/>
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+            </div>
+        </>
+    )
 }
