@@ -4,16 +4,12 @@ import HomeHeader from './companents/HomeHeader'
 import Home from './pages/Home'
 import Footer from './companents/Footer'
 import Pizza from './pages/Pizza'
-import x from './images/Cross.svg'
+import BoxInfo from './companents/BoxInfo'
 
 function App() {
 
 
-  const [name , setName] = useState('boxInfo')
-  function close(){
-    setName('none')
-  }
-  
+
   return (
     <div className="App">
       <HomeHeader />
@@ -23,16 +19,10 @@ function App() {
       <div className="container">
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/pizza' element={<Pizza setName={setName}/>} />
+          <Route path='/pizza' element={<Pizza />} />
         </Routes>
       </div>
       <Footer />
-      <div  className={name}>
-        <div className="productInfo">
-          <p>❤️</p>
-        </div>
-        <img src={x} alt="" onClick={() => close()}/>
-      </div>
     </div>
   )
 }
