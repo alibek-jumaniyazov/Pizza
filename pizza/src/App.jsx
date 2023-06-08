@@ -13,9 +13,6 @@ function App() {
   return (
     <div className="App">
       <HomeHeader />
-      <Routes>
-        {/* <Route path='/' element={<Home />} /> */}
-      </Routes>
       <div className="container">
         <Routes>
           <Route path='/' element={<Home />} />
