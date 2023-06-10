@@ -12,7 +12,7 @@
     align-items: center;
     gap: 0;
 }
-.boxInfo img{
+.x{
     transform: translate(-300px,-310px);
     cursor: pointer;
     transition: all 0.4s ease;
@@ -34,3 +34,41 @@
 .none{
     display: none;
 }
+.productZakaz{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.savzavot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.savzavotBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.savzavotBorder {
+    width: 105px;
+    height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 12px;
+}
+
+.savzavotBox p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #191919;
+}
+
