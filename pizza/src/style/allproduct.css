@@ -1,4 +1,4 @@
-.boxInfo{
+.boxInfo {
     position: fixed;
     background: rgba(25, 25, 25, 0.4);
     backdrop-filter: blur(16px);
@@ -12,8 +12,9 @@
     align-items: center;
     gap: 0;
 }
-.x{
-    transform: translate(-300px,-310px);
+
+.x {
+    transform: translate(-300px, -310px);
     cursor: pointer;
     transition: all 0.4s ease;
 }
@@ -28,16 +29,20 @@
     align-items: center;
     margin: 0 auto;
 }
-.owerflow{
+
+.owerflow {
     overflow: hidden;
 }
-.none{
+
+.none {
     display: none;
 }
-.productZakaz{
+
+.productZakaz {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    gap: 60px;
 }
 
 .savzavot {
@@ -72,3 +77,41 @@
     color: #191919;
 }
 
+.HamirProductBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 480px;
+    border-radius: 6px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+}
+
+.HamirProductBox p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #191919;
+    height: 22px;
+    width: 240px;
+    z-index: 22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgBox {
+    position: absolute;
+    left: 0%;
+    right: 50%;
+    top: 0%;
+    bottom: 0%;
+    background: #FF7010;
+    border-radius: 6px;
+    height: 48px;
+    width: 240px;
+    border-radius: 6px;
+    z-index: 0;
+}

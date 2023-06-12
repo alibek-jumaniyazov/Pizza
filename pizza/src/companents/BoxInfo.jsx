@@ -16,7 +16,7 @@ export default function BoxInfo({ setName, name }) {
             <div className="productInfo">
                 <div className="productZakaz">
                     <div className="productImgBox">
-                        <img src={ProductPizza} alt="" />
+                        <img style={{width:"450px"}} src={ProductPizza} alt="" />
                     </div>
                     <div className="productBoxInfo">
                         <div className="productBoxInfo_tur">Пепперони по-деревенски</div>
@@ -49,6 +49,11 @@ export default function BoxInfo({ setName, name }) {
 
                                 <p>Моцарелла</p>
                             </div>
+                        </div>
+                        <div className="HamirProductBox">
+                            <p>Традиционное</p>
+                            <p>Тонкое</p>
+                            <div className="bgBox"></div>
                         </div>
                     </div>
                 </div>
