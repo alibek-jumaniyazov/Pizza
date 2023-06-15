@@ -41,8 +41,8 @@
 .productZakaz {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 60px;
+    align-items: center;
+    gap:30px;
 }
 
 .savzavot {
@@ -139,6 +139,7 @@
     width: 159.08572387695312px;
     cursor: pointer;
     z-index: 22;
+    transition: all 0.4s ease;
 }
 
 .bgBoxsm {
@@ -148,4 +149,28 @@
     height: 44px;
     width: 159.08572387695312px;
     z-index: 1;
+    transition: all 0.4s ease;
+}
+.productBoxInfo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+}
+.productImgBox img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.productImgBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+
+    width: 450px;
+    height: 450px;
 }

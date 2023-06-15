@@ -10,14 +10,14 @@ export default function BoxInfo({ setName, name }) {
         setName('none')
     }
 
-    const  [productBoxImg , setProductBoxImg] = useState("450px")
+    const  [productBoxImg , setProductBoxImg] = useState("300px")
     const [hamir , setHamir] = useState('0%')
     const [sm , setSm] = useState('0%')
     const [colorHamir1 , setColorHamir1] = useState('#ffffff')
     const [colorHamir2 , setColorHamir2] = useState('#191919')
 
     const [colorSm1 , setColorSm1] = useState('#ffffff')
-    const [colorSm2 , setColorSm2] = useState('#ffffff')
+    const [colorSm2 , setColorSm2] = useState('#191919')
     const [colorSm3 , setColorSm3] = useState('#191919')
 
     
@@ -29,30 +29,32 @@ export default function BoxInfo({ setName, name }) {
     }
     function hamirLeft() {
         setHamir('0%')
-        console.log('ol');
         setColorHamir1('#ffffff')
         setColorHamir2('#191919')
     }
     
 
     function hsmRight() {
+        setProductBoxImg('300px')
         setSm('0%')
-        console.log('ol');
-        setColorHamir1('#191919')
-        setColorHamir2('#ffffff')
+        setColorSm1('#ffffff')
+        setColorSm2('#191919')
+        setColorSm3('#191919')
     }
     function smtop() {
-        setSm('0%')
-        console.log('ol');
-        setColorHamir1('#ffffff')
-        setColorHamir2('#191919')
+        setProductBoxImg('400px')
+        setSm('34%')
+        setColorSm1('#191919')
+        setColorSm2('#ffffff')
+        setColorSm3('#191919')
     }
     
     function smLeft() {
-        setSm('0%')
-        console.log('ol');
-        setColorHamir1('#ffffff')
-        setColorHamir2('#191919')
+        setProductBoxImg('450px')
+        setSm('67%')
+        setColorSm1('#191919')
+        setColorSm2('#191919')
+        setColorSm3('#ffffff')
     }
     
 
@@ -102,10 +104,40 @@ export default function BoxInfo({ setName, name }) {
                             <div style={{left: hamir}} className="bgBox"></div>
                         </div>
                         <div className="PizzaSm">
-                            <p>20 см</p>
-                            <p>28 см</p>
-                            <p>33 см</p>
-                            <div style={{left: '1%'}} className="bgBoxsm"></div>
+                            <p style={{color: colorSm1}} onClick={() => hsmRight()}>20 см</p>
+                            <p style={{color: colorSm2}} onClick={() => smtop()}>28 см</p>
+                            <p style={{color: colorSm3}} onClick={() => smLeft()}>33 см</p>
+                            <div style={{left: sm}} className="bgBoxsm"></div>
+                        </div>
+                        <div className="savzavot">
+                            <div className="savzavotBox">
+                                <div className="savzavotBorder">
+                                    <img src={sir} alt="" />
+                                </div>
+
+                                <p>Моцарелла</p>
+                            </div>
+                            <div className="savzavotBox">
+                                <div className="savzavotBorder">
+                                    <img src={sir} alt="" />
+                                </div>
+
+                                <p>Моцарелла</p>
+                            </div>
+                            <div className="savzavotBox">
+                                <div className="savzavotBorder">
+                                    <img src={sir} alt="" />
+                                </div>
+
+                                <p>Моцарелла</p>
+                            </div>
+                            <div className="savzavotBox">
+                                <div className="savzavotBorder">
+                                    <img src={sir} alt="" />
+                                </div>
+
+                                <p>Моцарелла</p>
+                            </div>
                         </div>
                     </div>
                 </div>
