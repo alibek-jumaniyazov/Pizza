@@ -42,7 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:30px;
+    gap: 30px;
 }
 
 .savzavot {
@@ -151,21 +151,23 @@
     z-index: 1;
     transition: all 0.4s ease;
 }
-.productBoxInfo{
+
+.productBoxInfo {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     gap: 30px;
 }
-.productImgBox img{
+
+.productImgBox img {
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.4s ease;
 }
 
-.productImgBox{
+.productImgBox {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,4 +175,63 @@
 
     width: 450px;
     height: 450px;
+}
+
+.productBoxPriceInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.priceInfo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.priceInfo p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FF7010;
+}
+
+.priceInfo span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #A5A5A5;
+}
+
+.productBoxKarzinka button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 40px;
+    gap: 10px;
+    width: 155px;
+    height: 48px;
+    background: #FF7010;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+.productBoxKarzinka button:active{
+    scale: 70%;
+    transition: all 0.4s ease;
+}
+.productBoxKarzinka {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
