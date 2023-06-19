@@ -2,12 +2,14 @@ import { useState } from 'react'
 import x from '../images/Cross.svg'
 import ProductPizza from '../images/ProductPizza.png'
 import sir from '../images/Group 83.svg'
+import BackgroundBlack from './BackgroundBlack'
 
 
 export default function BoxInfo({ setName, name }) {
 
     function close() {
         setName('none')
+        setBgBlack('none')
     }
 
     const [productBoxImg, setProductBoxImg] = useState("300px")
@@ -15,6 +17,7 @@ export default function BoxInfo({ setName, name }) {
     const [sm, setSm] = useState('0%')
     const [colorHamir1, setColorHamir1] = useState('#ffffff')
     const [colorHamir2, setColorHamir2] = useState('#191919')
+    const [bgBlack , setBgBlack] = useState('none')
 
     const [colorSm1, setColorSm1] = useState('#ffffff')
     const [colorSm2, setColorSm2] = useState('#191919')
@@ -61,7 +64,8 @@ export default function BoxInfo({ setName, name }) {
 
 
     return (
-        <div className={name}>
+        <div className={name} >
+            <BackgroundBlack bgBlack={bgBlack} setBgBlack={setBgBlack}/>
             <div className="productInfo">
                 <div className="productZakaz">
                     <div className="productImgBox">

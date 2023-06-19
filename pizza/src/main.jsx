@@ -6,6 +6,7 @@ import './style/app.css'
 import './style/header.css'
 import './style/footer.css'
 import './style/product.css'
+import './style/karzinka.css'
 import './style/allproduct.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(

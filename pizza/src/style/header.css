@@ -392,3 +392,6 @@ width: 230px;
     display: none;
     transition: all 0.4s ease;
 }
+.logoNameText{
+    color: #191919;
+}

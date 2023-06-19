@@ -152,3 +152,14 @@ body {
    }
  }
   */
+
+  .bgBlack{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(25, 25, 25, 0.4);
+    backdrop-filter: blur(16px);
+    z-index: 999999;
+  }

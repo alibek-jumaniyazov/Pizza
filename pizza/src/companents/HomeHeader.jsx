@@ -4,6 +4,7 @@ import location from '../images/Location.svg'
 import Logo from '../images/Logo.svg'
 import Account from '../images/Account.svg'
 import ShoppingCard from '../images/ShoppingCard.svg'
+import Karzinka from './Karzinka'
 
 export default function HomeHeader() {
 
@@ -29,8 +30,14 @@ export default function HomeHeader() {
     }
 
     window.addEventListener('scroll', scrollFixed)
+    const [karzinkaBox , setKarzinkaBox] = useState('none')
+    const [bgBlack , setBgBlack] = useState('none')
 
 
+    function openKarzinka(){
+        setKarzinkaBox('karzinkaBlock') 
+        setBgBlack('bgBlack')
+    }
     return (
         <>
             <div className="HomeHeaderr">
@@ -72,15 +79,12 @@ export default function HomeHeader() {
                             <p className="logoNameText">Куда пицца</p>
                         </div>
                     </Link>
-                    <div className="shopCard">
+                    <div onClick={() => openKarzinka()} className="shopCard">
                         <img src={ShoppingCard} alt="" />
                         <p>0</p>
                         <span>₽</span>
                     </div>
                 </header>
-
-
-
 
             </div>
             <nav className={nav ? 'pagesNav' : 'none'}>
@@ -104,7 +108,7 @@ export default function HomeHeader() {
                         <li className="item">Другое <i class="fa-solid fa-chevron-down"></i></li>
                     </ul>
 
-                    <div className="shopCard">
+                    <div onClick={() => openKarzinka()} className="shopCard">
                         <img src={ShoppingCard} alt="" />
                         <p>0</p>
                         <span>₽</span>
@@ -112,6 +116,7 @@ export default function HomeHeader() {
                 </div>
 
             </nav>
+            <Karzinka karzinkaBox={karzinkaBox} setKarzinkaBox={setKarzinkaBox} bgBlack={bgBlack} setBgBlack={setBgBlack}/>
         </>
     )
 }
