@@ -58,6 +58,7 @@ export default function BoxInfo({ setName, name }) {
     }
     
 
+    
 
     return (
         <div className={name}>
