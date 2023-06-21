@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import BackgroundBlack from './BackgroundBlack'
 import x from '../images/Union.svg'
+import ProductKarzinka from './ProductKarzinka'
 
 export default function Karzinka({karzinkaBox , setKarzinkaBox ,bgBlack,setBgBlack}) {
 
@@ -16,6 +17,21 @@ export default function Karzinka({karzinkaBox , setKarzinkaBox ,bgBlack,setBgBla
           <div className="karzinkaTitle">
             <p>Ваш заказ</p>
             <img src={x} alt="" />
+          </div>
+          <div className="karzinkaAllProduct">
+            <ProductKarzinka/>
+            <ProductKarzinka/>
+            <ProductKarzinka/>
+            <ProductKarzinka/>
+            <ProductKarzinka/>
+            <ProductKarzinka/>
+            <ProductKarzinka/>
+            <ProductKarzinka/>
+            <ProductKarzinka/>
+            <ProductKarzinka/>
+          </div>
+          <div className="karzinkaAllPrice">
+              
           </div>
         </div>
     </div>
