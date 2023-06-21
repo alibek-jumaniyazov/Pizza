@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import BackgroundBlack from './BackgroundBlack'
-import x from '../images/Cross.svg'
+import x from '../images/Union.svg'
 
 export default function Karzinka({karzinkaBox , setKarzinkaBox ,bgBlack,setBgBlack}) {
 
