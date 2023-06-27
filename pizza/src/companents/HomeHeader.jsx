@@ -37,6 +37,7 @@ export default function HomeHeader() {
     function openKarzinka(){
         setKarzinkaBox('karzinkaBlock') 
         setBgBlack('bgBlack')
+        
     }
     return (
         <>
