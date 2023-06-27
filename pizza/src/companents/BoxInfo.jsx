@@ -7,7 +7,7 @@ import BoxCompanentSm from './BoxCompanentSm'
 import BoxCompanentHamir from './BoxCompanentHamir'
 
 
-export default function BoxInfo({ setName, name }) {
+export default function BoxInfo({ setName, name , item}) {
 
     function close() {
         setName('none')
@@ -24,10 +24,10 @@ export default function BoxInfo({ setName, name }) {
             <div className="productInfo">
                 <div className="productZakaz">
                     <div className="productImgBox">
-                        <img style={{ width: `${productBoxImg}` }} src={ProductPizza} alt="" />
+                        <img style={{ width: `${productBoxImg}` }} src={item.img} alt="" />
                     </div>
                     <div className="productBoxInfo">
-                        <div className="productBoxInfo_tur">Пепперони по-деревенски</div>
+                        <div className="productBoxInfo_tur">{item.name}</div>
                         <div className="savzavot">
                             <div className="savzavotBox">
                                 <div className="savzavotBorder">
@@ -92,7 +92,7 @@ export default function BoxInfo({ setName, name }) {
                         </div>
                         <div className="productBoxPriceInfo">
                             <div className="priceInfo">
-                                <p>Итого: 379 ₽</p>
+                                <p>Итого: {item.price} ₽</p>
                                 <span>400 г</span>
                             </div>
                             <div className="productBoxKarzinka">

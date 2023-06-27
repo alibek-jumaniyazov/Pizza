@@ -1,16 +1,16 @@
 import React from 'react'
 import ProductPizza from '../images/ProductPizza.png'
 
-export default function Product({open}) {
+export default function Product({open , item}) {
   return (
     <div className='Product'>
-        <img src={ProductPizza} alt="" />
+        <img src={item.img} alt="" />
         <div className="poductInfo">
-            <p>Пепперони по-деревенски</p>
-            <span>Огурцы маринованные, Пепперони, Сыр Моцарелла...</span>
+            <p>{item.name}</p>
+            <span>{item.info}</span>
             <div className="buutonPrice">
-                <button onClick={() => open()} >Выбрать</button>
-                <b>от 399 ₽</b>
+                <button onClick={() => open(item.id, item.img , item.name , item.info , item.price)} >Выбрать</button>
+                <b>от {item.price} ₽</b>
             </div>
         </div>
     </div>

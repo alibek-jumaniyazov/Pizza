@@ -121,7 +121,8 @@
     color: #FF7010;
 
 }
-.karzinkaAllProduct{
+
+.karzinkaAllProduct {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -129,4 +130,28 @@
     gap: 20px;
     height: 100%;
     overflow-y: scroll;
+}
+
+.karzinkaAllPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.karzinkaAllPrice p {
+    color: #FF7010;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.karzinkaAllPrice button{
+    border: none;
+    padding: 13px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: #FF7010;
+    color: #FFFFFF;
 }

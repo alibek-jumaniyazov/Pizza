@@ -31,7 +31,8 @@ export default function Karzinka({karzinkaBox , setKarzinkaBox ,bgBlack,setBgBla
             <ProductKarzinka/>
           </div>
           <div className="karzinkaAllPrice">
-              
+              <p>Итого: 2 379 ₽</p>
+              <button>Оформить заказ</button>
           </div>
         </div>
     </div>
